@@ -1,0 +1,25 @@
+{
+  "name": "express-openai-server",
+  "version": "1.0.0",
+  "description": "Express server with OpenAI integration",
+  "main": "server.cjs",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.cjs",
+    "dev": "nodemon server.cjs"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.22.0",
+    "axios": "^1.7.9",
+    "cors": "^2.8.5",
+    "csv-parser": "^3.2.0",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "fs": "^0.0.1-security",
+    "openai": "^4.85.3",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
