@@ -161,11 +161,8 @@
             })
             .then(response => response.json())
             .then(data => {
-                document.getElementById('ai-response').innerHTML = `<p>${data.message}</p>`;
-            })
-            .catch(error => {
-                console.error('Error:', error);
-                document.getElementById('ai-response').innerHTML = 'Error getting AI response.';
+                let responseList = data.message.split('\n').map(line => `<li>${line}</li>`).join('');
+                document.getElementById('ai-response').innerHTML = `<ul>${responseList}</ul>`;
             });
         }
     </script>
